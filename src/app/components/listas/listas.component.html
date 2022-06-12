@@ -1,0 +1,15 @@
+<div class="container-fluid mt-5">
+    <div class="list-row">
+        <div class="col-md-6">
+            <h4>Lista de Categorias</h4>
+            <ul class="list-group">
+                <li class="list-group-item" *ngFor="let Categorias of categoriass; let i=index"
+                    [class.activate]=" i == categoriaIndex"
+                    (click)="configuracionDeCategoria(Categorias,i)"
+                >
+                {{Categorias.nombre}}
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
